@@ -16,7 +16,7 @@ subMetering3 <- as.numeric(selectedData$Sub_metering_3)
 plot(DateTime, subMetering1, type = "l", xlab = "", ylab = "Energy Sub metering")
 lines(DateTime, subMetering2, type = "l", col = "red")
 lines(DateTime, subMetering3, type = "l", col = "blue")
-legend("topright", lty= 1, col = c("Black", "red", "blue"), legend = c( "Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+legend("topright", c( "Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), col = c("Black", "red", "blue"), lty= 1)
 
 # Write to PNG file
 dev.copy(png, file = "./Exploratory Data Analysis/Project 1/plot3.png", width = 480, height = 480)
