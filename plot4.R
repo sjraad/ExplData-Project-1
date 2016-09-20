@@ -20,9 +20,9 @@ plot(DateTime, Voltage, type = "l", xlab = "", ylab = "Voltage")
 plot(DateTime, subMetering1, type = "l", xlab = "", ylab = "Energy Sub metering")
 lines(DateTime, subMetering2, type = "l", col = "red")
 lines(DateTime, subMetering3, type = "l", col = "blue")
-legend("topright", c( "Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), col = c("Black", "red", "blue"), lty= 1, cex = 0.2)
+legend("topright", c( "Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), col = c("Black", "red", "blue"), lty= 1, bty = "n", cex = 0.5)
 plot(DateTime, ReactivePower, type = "l", xlab = "", ylab = "Global_reactive_power")
 
 # Write to PNG file
-dev.copy(png, file = "plot4.png", width = 480, height = 480)
+dev.copy(png, file = "./Exploratory Data Analysis/Project 1/plot4.png", width = 480, height = 480)
 dev.off()
